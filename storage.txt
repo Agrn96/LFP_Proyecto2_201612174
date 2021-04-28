@@ -1,0 +1,63 @@
+
+
+def adp_auto(num, gram):
+    nombre, noTerm, terminal, termI, g = gram.getGram(num)
+    term = set(terminal)
+
+    gram.out(num)
+
+    print("Ingresar una cadena: ", end="")
+    cadena = input()
+    cadena += "#"
+    state = 'i'
+    stack=[]
+    string_len = len(cadena)
+    print("longitud cadena: " + str(string_len) + " ||| " + cadena)
+    iterador = 0
+    i=0
+    while(iterador < string_len):
+        current = cadena[iterador]
+        if(state=='i'):
+            stack.append('#')
+            state = 'p'
+            print("state: ",state,", pila: ",stack,", char: ", current,", iterador: ",iterador)
+        elif(state=='p'):
+            stack.append(termI)
+            state='q'
+            print("state: ",state,", pila: ",stack,", char: ", current,", iterador: ",iterador)
+        elif(state=='q'):
+            if(stack[-1]==termI and iterador==0):
+                stack.pop()
+                num = 0
+                for item in g[i]:
+                    if(num==0):
+                        continue
+                    stack.append(item)
+                print(stack)
+                i+=1
+            elif((stack[-1] in term) and (current == stack[-1])):
+                stack.pop()
+                iterador+=1
+            elif(stack[-1]==g[i][0] and current != g[i][0]):
+                stack.pop()
+                num = 0
+                for item in g[i]:
+                    if(num==0):
+                        continue
+                    stack.append(item)
+                print(stack)
+                i+=1
+            elif(stack[-1]=='#'):
+                stack.pop()
+                state = 'f'
+                print("state: ",state,", pila: ",stack,", char: ", current,", iterador: ",iterador)
+                iterador += 1 
+            else:
+                print("state: ",state,", pila: ",stack,", char: ", current,", iterador: ",iterador)
+                print("\n-----la cadena no se acepta-----")
+                break
+        elif(state=='f'):
+            print("state: ",state,", pila: ",stack,", char: ", current,", iterador: ",iterador)
+            print("\n-----la cadena ",cadena," se acepta-----")
+            break       
+        

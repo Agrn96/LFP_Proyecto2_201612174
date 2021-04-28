@@ -1,0 +1,22 @@
+// Grammmatica
+digraph {
+	rankdir=LR
+	node [shape=plaintext]
+	name [label="Gramatica: AP_Test1"]
+	it [label="iteracion 13"]
+	node [shape=record]
+	P [label="Pila: zz#"]
+	E [label="Entrada: z"]
+	tran [label="Transicion: (q,z,z;q,$)"]
+	node [shape=doublecircle]
+	f
+	node [shape=circle]
+	i
+	p
+	q
+	i -> p [label="λ,λ;#"]
+	p -> q [label="λ,λ;S"]
+	q -> f [label="λ,#,λ"]
+	q:n -> q:n [label="λ,S;K\nλ,K;MNz\nλ,M;aMa\nλ,M;z\nλ,N;bNb\nλ,N;z\n"]
+	q:s -> q:s [label="a,a;λ\nb,b;λ\nz,z;λ\n"]
+}

@@ -1,0 +1,18 @@
+Test1
+S,M,N,K;a,b,z;S
+S -> K
+K -> M N z
+M -> a M a
+M -> z
+N -> b N b
+N -> z
+*
+Test2
+S,T,K,J;0,1,x,y,z,w;S
+S -> J
+J -> wTKz
+T -> y01T
+T -> y
+K -> xx0K0xx
+K -> 1
+*

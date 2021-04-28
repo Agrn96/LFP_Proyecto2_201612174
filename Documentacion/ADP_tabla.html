@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center">
+
+<div><H1>Tabla de Iteraciones</H1></div>
+<table><thead>
+<tr><th>Iteraciones</th>
+<th>Pila <-</th>
+<th>Entrada</th>
+<th>Transiciones</th>
+</tr></thead>
+<tr>
+	<td>0</td>
+	<td style="text-align:right"></td>
+	<td>a</td>
+	<td>(i,$,$;p;#)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>1</td>
+	<td style="text-align:right">#</td>
+	<td>a</td>
+	<td>(p,$,$;q;S)</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td style="text-align:right">S#</td>
+	<td>a</td>
+	<td>(q,$,S;q,K)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>3</td>
+	<td style="text-align:right">K#</td>
+	<td>a</td>
+	<td>(q,$,K;q,M,N,z)</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td style="text-align:right">MNz#</td>
+	<td>a</td>
+	<td>(q,$,M;q,a,M,a)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>5</td>
+	<td style="text-align:right">aMaNz#</td>
+	<td>a</td>
+	<td>(q,a,a;q,$)</td>
+</tr>
+<tr>
+	<td>6</td>
+	<td style="text-align:right">MaNz#</td>
+	<td>a</td>
+	<td>(q,$,M;q,a,M,a)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>7</td>
+	<td style="text-align:right">aMaaNz#</td>
+	<td>a</td>
+	<td>(q,a,a;q,$)</td>
+</tr>
+<tr>
+	<td>8</td>
+	<td style="text-align:right">MaaNz#</td>
+	<td>z</td>
+	<td>(q,$,M;q,z)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>9</td>
+	<td style="text-align:right">zaaNz#</td>
+	<td>z</td>
+	<td>(q,z,z;q,$)</td>
+</tr>
+<tr>
+	<td>10</td>
+	<td style="text-align:right">aaNz#</td>
+	<td>a</td>
+	<td>(q,a,a;q,$)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>11</td>
+	<td style="text-align:right">aNz#</td>
+	<td>a</td>
+	<td>(q,a,a;q,$)</td>
+</tr>
+<tr>
+	<td>12</td>
+	<td style="text-align:right">Nz#</td>
+	<td>b</td>
+	<td>(q,$,N;q,b,N,b)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>13</td>
+	<td style="text-align:right">bNbz#</td>
+	<td>b</td>
+	<td>(q,b,b;q,$)</td>
+</tr>
+<tr>
+	<td>14</td>
+	<td style="text-align:right">Nbz#</td>
+	<td>z</td>
+	<td>(q,$,N;q,z)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>15</td>
+	<td style="text-align:right">zbz#</td>
+	<td>z</td>
+	<td>(q,z,z;q,$)</td>
+</tr>
+<tr>
+	<td>16</td>
+	<td style="text-align:right">bz#</td>
+	<td>b</td>
+	<td>(q,b,b;q,$)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>17</td>
+	<td style="text-align:right">z#</td>
+	<td>z</td>
+	<td>(q,z,z;q,$)</td>
+</tr>
+<tr>
+	<td>18</td>
+	<td style="text-align:right">#</td>
+	<td>#</td>
+	<td>(q,$,#;f,$)</td>
+</tr>
+<tr style="background-color:#d3d3d3">
+	<td>19</td>
+	<td style="text-align:right">$</td>
+	<td>$</td>
+	<td>f</td>
+</tr></table>
+</body>
+</html>
