@@ -5,9 +5,9 @@ digraph {
 	name [label="Gramatica: AP_Test1"]
 	it [label="iteracion 13"]
 	node [shape=record]
-	P [label="Pila: zz#"]
-	E [label="Entrada: z"]
-	tran [label="Transicion: (q,z,z;q,$)"]
+	P [label="Pila: bNbz#"]
+	E [label="Entrada: b"]
+	tran [label="Transicion: (q,b,b;q,$)"]
 	node [shape=doublecircle]
 	f
 	node [shape=circle]

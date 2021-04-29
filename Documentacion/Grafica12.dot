@@ -6,8 +6,8 @@ digraph {
 	it [label="iteracion 12"]
 	node [shape=record]
 	P [label="Pila: Nz#"]
-	E [label="Entrada: z"]
-	tran [label="Transicion: (q,$,N;q,z)"]
+	E [label="Entrada: b"]
+	tran [label="Transicion: (q,$,N;q,b,N,b)"]
 	node [shape=doublecircle]
 	f
 	node [shape=circle]
